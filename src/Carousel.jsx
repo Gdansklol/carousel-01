@@ -8,7 +8,7 @@ export const  Carousel =() => {
 
     const items = [
         {   title: "Meny 1",
-            description:"Chèvrekräm med färsk timjan och vitlök, serranoskinka,kanderade valnötter med flingsalt, ruccola och acaciahonung",
+            description:"Matiga våfflor : Meny-1. Svensson Special - 145 kronor. Chèvrekräm med färsk timjan och vitlök, serranoskinka,kanderade valnötter med flingsalt, ruccola och acaciahonung",
             icon:  require("./Media/ex1.svg")
         },
         {   title: "Meny 2",
