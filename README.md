@@ -36,6 +36,8 @@ index.css
 
 
 
+### src / CarouselItem.jsx
+
 
 
 ### `lear more` 

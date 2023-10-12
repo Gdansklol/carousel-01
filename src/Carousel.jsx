@@ -1,4 +1,4 @@
-// rfc or rfce for generate a template component 
+// raf or rfc or rfce for generate a template component 
 
 import React from 'react'
 
