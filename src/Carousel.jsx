@@ -12,11 +12,11 @@ export const  Carousel =() => {
             icon:  require("./Media/ex1.svg")
         },
         {   title: "Meny 2",
-            description:"special smak",
+            description:"Skagenröra á la Tore Wretman (innehåller inga mejeriprodukter), serveras med ärtskott och citron.",
             icon:  require("./Media/ex2.svg")
         },
         {   title: "Meny 3",
-            description:"special smak",
+            description:"Rökt lax, citron- och pepparrotskräm, tångrom, gräslök och citron.",
             icon:  require("./Media/ex3.svg")
         }
     ]

@@ -52,6 +52,58 @@ download SVG for your project
 
 
 
+### index.css 
+
+```js
+
+
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,900;1,200&display=swap');
+
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif
+}
+
+.App {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+  background-color: #85a8c5;
+}
+
+.carousel {
+  overflow: hidden;
+  width: 700px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.carousel-img {
+  width: 250px;
+}
+
+
+```
+
+now ex1 ex2 ex3.svg shows with 
+.carousel {
+  overflow: hidden;
+  width: 700px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.carousel-img {
+  width: 250px;
+}
+
+
+
+
 ### `lear more` 
 
 link : (https://www.youtube.com/watch?v=CMg_1KxpM_4)
