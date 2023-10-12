@@ -21,7 +21,7 @@ Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 The page will reload when you make changes.\
 You may also see any lint errors in the console.
 
-###
+### carousel Component in React
 
 > Now we need to delete the code , so I am going to delete some files
 
@@ -30,6 +30,12 @@ we won't need so first we're gonna
 clear the App.js clear the imports 
 also clear the styles from
 index.css
+
+
+### src/ Carousel.jsx
+
+
+
 
 
 ### `lear more` 
