@@ -47,8 +47,22 @@ body {
   padding: 0 20px 0 20px;
   white-space: normal;
   color: #626b7b;
-
 }
+
+.carousel-buttons {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.button-arrow {
+  background: white;
+  border: none;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+
+
 
 /* body {
   margin: 0;
