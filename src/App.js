@@ -1,4 +1,5 @@
 import { Carousel } from "./Carousel";
+import './index.css';
 
 function App() {
   return (
