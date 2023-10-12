@@ -30,8 +30,22 @@ export const  Carousel =() => {
         })}
         </div>
         
-        <div>
-            <button>arrow_left</button>
+        <div className='carousel-buttons'>
+            <button>
+            <span class="material-symbols-outlined">
+            arrow_back_ios
+            </span>
+              </button>
+        <div className='indicators'> 
+        <span class="material-symbols-outlined">
+radio_button_checked
+</span>
+    </div>
+            <button>
+            <span class="material-symbols-outlined">
+arrow_forward_ios
+</span>
+                </button>
         </div>
     </div>
   )

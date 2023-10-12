@@ -225,8 +225,40 @@ show just one svg img with brocken descriptions text.
 version index.css 4 
 
 
+## google fonts icons 
 
+link ( https://fonts.google.com/icons?query=radio&selected=Material+Symbols+Outlined:radio_button_checked:FILL@0;wght@400;GRAD@0;opsz@24&icon.query=radio)
 
+1. copy link rel stylesheet of on of google fonts icons ex radio button icon 
+
+2. paste in public/ index.html 
+<link> here </link>
+
+3. arrow_back_ios in google  fonts icons 
+
+ ex. 
+<span class="material-symbols-outlined">
+arrow_back_ios
+</span>
+
+```js
+
+ <div className='carousel-buttons'>
+            <button>
+            <span class="material-symbols-outlined">
+            arrow_back_ios
+            </span>
+              </button>
+        <div className='indicators'> 
+        <span class="material-symbols-outlined">
+radio_button_checked
+</span>
+        </div>
+            <button>arrow_right</button>
+        </div>
+    </div>
+
+    ```
 
 
 
