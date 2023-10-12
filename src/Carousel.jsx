@@ -37,13 +37,15 @@ export const  Carousel =() => {
             </span>
               </button>
             <div className='indicators'> 
-            <button className='indicator-buttons'>
-                {" "}
-            <span class="material-symbols-outlined">radio_button_checked   </span>
-              
-               </button>
-            
-         
+            {items.map((item,idex)=>{
+                return (
+                    <button className='indicator-buttons'>
+                    <span class="material-symbols-outlined">
+                        radio_button_checked   
+                    </span>
+                    </button>
+                );
+            })}
             </div>
             <button className='button-arrow'>
             <span class="material-symbols-outlined">
