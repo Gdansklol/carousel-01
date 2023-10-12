@@ -29,6 +29,10 @@ export const  Carousel =() => {
             return   <CarouselItem item={item}/>;
         })}
         </div>
+        
+        <div>
+            <button>arrow_left</button>
+        </div>
     </div>
   )
 }
