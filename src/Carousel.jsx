@@ -19,11 +19,22 @@ export const  Carousel =() => {
             description:"Rökt lax, citron- och pepparrotskräm, tångrom, gräslök och citron.",
             icon:  require("./Media/ex3.svg")
         }
-    ]
+    ];
+
+    const updateIndex = (newIndex)=> {
+        if (newIndex < 0) {
+            newIndex = 0;
+        } else if (newIndex >= items.length){
+            newIndex = items.length -1;
+        }
+
+        setActivIndex(newIndex);
+    };
+
   return (
     <div className='carousel'>
         <div className='inner'
-        style={{transform: `translate:(-${activeIndex * 100})`}}
+        style={{transform: `translate(-${activeIndex * 100}%)`}}
         >
         {items.map((item)=>{
             return   <CarouselItem item={item}/>;
@@ -31,27 +42,45 @@ export const  Carousel =() => {
         </div>
         
         <div className='carousel-buttons'>
-            <button className='button-arrow'>
+            <button 
+            onClick={()=> {
+                updateIndex(activeIndex -1);
+            }}
+            className='button-arrow'>
             <span class="material-symbols-outlined">
             arrow_back_ios
             </span>
               </button>
             <div className='indicators'> 
-            {items.map((item,idex)=>{
+            {items.map((item,index)=>{
                 return (
-                    <button className='indicator-buttons'>
-                    <span class="material-symbols-outlined">
+                    <button 
+                    onClick={()=> {
+                        updateIndex(index);
+                    }}
+                    className='indicator-buttons'
+                    >
+                    <span 
+                    className={`material-symbols-outlined ${
+                        index === activeIndex 
+                            ?"indicator-symbol-active"
+                            : "indicator-symbol"
+                        }`}>
                         radio_button_checked   
                     </span>
                     </button>
                 );
             })}
             </div>
-            <button className='button-arrow'>
-            <span class="material-symbols-outlined">
-            arrow_forward_ios
+            <button 
+            onClick={()=> {
+                updateIndex(activeIndex +1);
+            }}
+            className='button-arrow'>
+             <span class="material-symbols-outlined">
+                arrow_forward_ios
             </span>
-            </button>
+            </button>   
         </div>
     </div>
   )

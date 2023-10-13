@@ -332,3 +332,104 @@ export const  Carousel =() => {
 ### `lear more` 
 
 link : (https://www.youtube.com/watch?v=CMg_1KxpM_4)
+
+- the update index is going to take as a parameter the active index -1 
+
+
+```js
+
+Carousel.jsx
+
+const [activeIndex, setActivIndex] = useState(0);
+
+    const items = [
+        {   title: "Meny 1",
+            description:"Matiga våfflor : Meny-1. Svensson Special - 145 kronor. Chèvrekräm med färsk timjan och vitlök, serranoskinka,kanderade valnötter med flingsalt, ruccola och acaciahonung",
+            icon:  require("./Media/ex1.svg")
+        },
+        {   title: "Meny 2",
+            description:"Skagenröra á la Tore Wretman (innehåller inga mejeriprodukter), serveras med ärtskott och citron.",
+            icon:  require("./Media/ex2.svg")
+        },
+        {   title: "Meny 3",
+            description:"Rökt lax, citron- och pepparrotskräm, tångrom, gräslök och citron.",
+            icon:  require("./Media/ex3.svg")
+        }
+    ];
+
+    const updateIndex = (newIndex)=> {
+        if (newIndex < 0) {
+            newIndex = 0;
+        } else if (newIndex >= items.length){
+            newIndex = items.length -1;
+        }
+
+        setActivIndex(newIndex);
+    };
+
+
+```
+
+```js
+
+<button 
+            onClick={()=> {
+                updateIndex(activeIndex -1);
+            }}
+            className='button-arrow'>
+            <span class="material-symbols-outlined">
+            arrow_back_ios
+            </span>
+              </button>
+
+    ```
+
+
+- I want to pass inside the carousel item a props which is going to be
+width of hundred percent 100%  and I amm going to put className in span because  this is react.
+
+> before 
+
+```js
+ <span class="material-symbols-outlined">
+             radio_button_checked   
+ </span>
+
+```
+
+> and inside I am going to copy paste the material symbol outline  , 
+material-symbols-outlined, 
+and then I am going to put the conditioner because if it's the active index
+I want to be basically if the index is equals the active index ,
+(index === activeIndex ?)
+I want to it change the style that we created that time that weäre creating the
+
+index.css basically m so if it's reactive index then I want to be the
+indicator symbol active class or else I donät want this 
+I want it to be the other one which is just the simple indicator simple class.
+
+
+> after
+
+```js
+ <span 
+                    className={`material-symbols-outlined ${
+                        index === activeIndex 
+                            ?"indicator-symbol-active"
+                            : "indicator-symbol"
+                        }`}>
+                        radio_button_checked   
+</span>
+
+```
+
+- before reactiv index , indicator- symbol -active class or
+else I do not want this , I want it to be other one which is just the simple
+indicator simple class.
+
+and let's see what's going on and it works. 
+
+bigger screen nice . everything works.  
+
+
+

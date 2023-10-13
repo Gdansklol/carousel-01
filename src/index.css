@@ -55,13 +55,35 @@ body {
 }
 
 .button-arrow {
-  background: white;
+  background: white; 
   border: none;
   cursor: pointer;
   margin-top: 20px;
 }
 
+.indicators {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
 
+.indicator-buttons {
+  border:none;
+  background: white;
+}
+
+.indicators > button {
+  margin: 5px;
+  background:white;
+}
+
+.indicator-symbol {
+  color: #26343f;
+}
+
+.indicator-symbol-active {
+  color: #ffffff;
+}
 
 
 /* body {
