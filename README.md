@@ -1,7 +1,7 @@
 ## Getting start react app and create Carousel component in React 2023
 
-
-# <img src="https://github.com/Gdansklol/carousel-01/assets/56717993/ffd56a05-28e0-47aa-9cd3-52bdbfa90f8c" width="800" height="600" justify-content="center"/>
+<!-- 
+# <img src="https://github.com/Gdansklol/carousel-01/assets/56717993/ffd56a05-28e0-47aa-9cd3-52bdbfa90f8c" width="800" height="600" justify-content="center"/> -->
 
 
 ### <img src="https://github.com/Gdansklol/carousel-01/assets/56717993/2c122770-0fca-4385-a7c5-b93db4654312" width="200" height="200" justify-content="center" />
