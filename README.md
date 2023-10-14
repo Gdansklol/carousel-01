@@ -1,25 +1,21 @@
 ## Getting start react app and create Carousel component in React 2023
 
-<!-- 
-# <img src="https://github.com/Gdansklol/carousel-01/assets/56717993/ffd56a05-28e0-47aa-9cd3-52bdbfa90f8c" width="800" height="600" justify-content="center"/> -->
+# <img src="https://github.com/Gdansklol/carousel-01/assets/56717993/ffd56a05-28e0-47aa-9cd3-52bdbfa90f8c" width="800" height="600" />
 
+# <img src="https://github.com/Gdansklol/carousel-01/assets/56717993/6fa55652-a62b-416a-b35e-ca593d704430)
 
-# <img src="https://github.com/Gdansklol/react-level-01/assets/56717993/a1c47e81-9bf9-411f-bd47-ac7197cc6977" width="200" height="200"/>
+" width="200" height="200"/>
 
-# <img src="https://github.com/Gdansklol/carousel-01/assets/56717993/2c122770-0fca-4385-a7c5-b93db4654312" width="200" height="200" />
+![caro](https://github.com/Gdansklol/carousel-01/assets/56717993/6fa55652-a62b-416a-b35e-ca593d704430)
 
-![svg1](https://github.com/Gdansklol/carousel-01/assets/56717993/ffd56a05-28e0-47aa-9cd3-52bdbfa90f8c)
+#### [Create React App]
 
+```js
+npx create-react-app ./
 
- #### [Create React App]
+```
 
-
- ```js
- npx create-react-app ./
-
- ```
-
- > in order to generate template react app. 
+> in order to generate template react app.
 
 and then test for it works.
 
@@ -37,16 +33,13 @@ You may also see any lint errors in the console.
 
 > Now we need to delete the code , so I am going to delete some files
 
-also we need to delete some of the code that 
-we won't need so first we're gonna 
-clear the App.js clear the imports 
+also we need to delete some of the code that
+we won't need so first we're gonna
+clear the App.js clear the imports
 also clear the styles from
 index.css
 
-
 ### src/ Carousel.jsx
-
-
 
 ### src / CarouselItem.jsx
 
@@ -54,17 +47,13 @@ index.css
 
 link (https://undraw.co/)
 
-click : Browse now 
-
+click : Browse now
 
 download SVG for your project
 
+## create src/ Media folder
 
-##  create src/ Media folder 
-
-
-
-### index.css 
+### index.css
 
 ```js
 
@@ -100,20 +89,19 @@ body {
 
 ```
 
-now ex1 ex2 ex3.svg shows with 
+now ex1 ex2 ex3.svg shows with
 .carousel {
-  overflow: hidden;
-  width: 700px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+overflow: hidden;
+width: 700px;
+display: flex;
+flex-direction: column;
+justify-content: center;
 }
 
 .carousel-img {
-  width: 250px;
-  
-}
+width: 250px;
 
+}
 
 > why stil ex1.svg img is broken?
 
@@ -150,10 +138,11 @@ body {
 }
 
 ```
+
 how to fix it ?
 
-- use white-space:nowrap 
-for shows all svg img and texter of description 
+- use white-space:nowrap
+  for shows all svg img and texter of description
 
 ```js
 
@@ -207,7 +196,7 @@ body {
 ```
 
 vesrion 3 index.css
-show just one svg img with brocken descriptions text. 
+show just one svg img with brocken descriptions text.
 
 ```js
 
@@ -234,26 +223,26 @@ show just one svg img with brocken descriptions text.
 
 ```
 
-version index.css 4 
+version index.css 4
 
-
-## google fonts icons 
+## google fonts icons
 
 link ( https://fonts.google.com/icons?query=radio&selected=Material+Symbols+Outlined:radio_button_checked:FILL@0;wght@400;GRAD@0;opsz@24&icon.query=radio)
 
-1. copy link rel stylesheet of on of google fonts icons ex radio button icon 
+1. copy link rel stylesheet of on of google fonts icons ex radio button icon
 
-2. paste in public/ index.html 
-<link> here </link>
+2. paste in public/ index.html
 
-3. arrow_back_ios in google  fonts icons 
+   <link> here </link>
 
- ex. 
+3. arrow_back_ios in google fonts icons
+
+ex.
 <span class="material-symbols-outlined">
 arrow_back_ios
 </span>
 
-```js
+````js
 
  <div className='carousel-buttons'>
             <button>
@@ -261,7 +250,7 @@ arrow_back_ios
             arrow_back_ios
             </span>
               </button>
-        <div className='indicators'> 
+        <div className='indicators'>
         <span class="material-symbols-outlined">
 radio_button_checked
 </span>
@@ -278,7 +267,7 @@ radio_button_checked
 
 Carousel.jsx
 
-// raf or rfc or rfce for generate a template component 
+// raf or rfc or rfce for generate a template component
 
 import React,{useState} from 'react';
 import { CarouselItem } from './CarouselItem';
@@ -309,21 +298,21 @@ export const  Carousel =() => {
             return   <CarouselItem item={item}/>;
         })}
         </div>
-        
+
         <div className='carousel-buttons'>
             <button className='button-arrow'>
             <span class="material-symbols-outlined">
             arrow_back_ios
             </span>
               </button>
-            <div className='indicators'> 
+            <div className='indicators'>
             <button className='indicator-buttons'>
                 {" "}
             <span class="material-symbols-outlined">radio_button_checked   </span>
-              
+
                </button>
-            
-         
+
+
             </div>
             <button className='button-arrow'>
             <span class="material-symbols-outlined">
@@ -335,56 +324,54 @@ export const  Carousel =() => {
   )
 }
 
-```
+````
 
-
-
-
-
-### `lear more` 
+### `lear more`
 
 link : (https://www.youtube.com/watch?v=CMg_1KxpM_4)
 
-- the update index is going to take as a parameter the active index -1 
-
+- the update index is going to take as a parameter the active index -1
 
 ```js
-
-Carousel.jsx
+Carousel.jsx;
 
 const [activeIndex, setActivIndex] = useState(0);
 
-    const items = [
-        {   title: "Meny 1",
-            description:"Matiga våfflor : Meny-1. Svensson Special - 145 kronor. Chèvrekräm med färsk timjan och vitlök, serranoskinka,kanderade valnötter med flingsalt, ruccola och acaciahonung",
-            icon:  require("./Media/ex1.svg")
-        },
-        {   title: "Meny 2",
-            description:"Skagenröra á la Tore Wretman (innehåller inga mejeriprodukter), serveras med ärtskott och citron.",
-            icon:  require("./Media/ex2.svg")
-        },
-        {   title: "Meny 3",
-            description:"Rökt lax, citron- och pepparrotskräm, tångrom, gräslök och citron.",
-            icon:  require("./Media/ex3.svg")
-        }
-    ];
+const items = [
+  {
+    title: "Meny 1",
+    description:
+      "Matiga våfflor : Meny-1. Svensson Special - 145 kronor. Chèvrekräm med färsk timjan och vitlök, serranoskinka,kanderade valnötter med flingsalt, ruccola och acaciahonung",
+    icon: require("./Media/ex1.svg"),
+  },
+  {
+    title: "Meny 2",
+    description:
+      "Skagenröra á la Tore Wretman (innehåller inga mejeriprodukter), serveras med ärtskott och citron.",
+    icon: require("./Media/ex2.svg"),
+  },
+  {
+    title: "Meny 3",
+    description:
+      "Rökt lax, citron- och pepparrotskräm, tångrom, gräslök och citron.",
+    icon: require("./Media/ex3.svg"),
+  },
+];
 
-    const updateIndex = (newIndex)=> {
-        if (newIndex < 0) {
-            newIndex = 0;
-        } else if (newIndex >= items.length){
-            newIndex = items.length -1;
-        }
+const updateIndex = (newIndex) => {
+  if (newIndex < 0) {
+    newIndex = 0;
+  } else if (newIndex >= items.length) {
+    newIndex = items.length - 1;
+  }
 
-        setActivIndex(newIndex);
-    };
-
-
+  setActivIndex(newIndex);
+};
 ```
 
-```js
+````js
 
-<button 
+<button
             onClick={()=> {
                 updateIndex(activeIndex -1);
             }}
@@ -398,50 +385,49 @@ const [activeIndex, setActivIndex] = useState(0);
 
 
 - I want to pass inside the carousel item a props which is going to be
-width of hundred percent 100%  and I amm going to put className in span because  this is react.
+width of hundred percent 100%  and I amm going to put className in span because
+ this is react.
 
-> before 
+> before
 
 ```js
  <span class="material-symbols-outlined">
-             radio_button_checked   
+             radio_button_checked
  </span>
 
-```
+````
 
-> and inside I am going to copy paste the material symbol outline  , 
-material-symbols-outlined, 
-and then I am going to put the conditioner because if it's the active index
-I want to be basically if the index is equals the active index ,
-(index === activeIndex ?)
-I want to it change the style that we created that time that weäre creating the
+> and inside I am going to copy paste the material symbol outline ,
+> material-symbols-outlined,
+> and then I am going to put the conditioner because if it's the active index
+> I want to be basically if the index is equals the active index ,
+> (index === activeIndex ?)
+> I want to it change the style that we created that time that weäre creating the
 
 index.css basically m so if it's reactive index then I want to be the
-indicator symbol active class or else I donät want this 
+indicator symbol active class or else I do not want this
 I want it to be the other one which is just the simple indicator simple class.
-
 
 > after
 
 ```js
- <span 
-                    className={`material-symbols-outlined ${
-                        index === activeIndex 
-                            ?"indicator-symbol-active"
-                            : "indicator-symbol"
-                        }`}>
-                        radio_button_checked   
+<span
+  className={`material-symbols-outlined ${
+    index === activeIndex ? "indicator-symbol-active" : "indicator-symbol"
+  }`}
+>
+  radio_button_checked
 </span>
-
 ```
 
 - before reactiv index , indicator- symbol -active class or
-else I do not want this , I want it to be other one which is just the simple
-indicator simple class.
+  else I do not want this , I want it to be other one which is just the simple
+  indicator simple class.
 
-and let's see what's going on and it works. 
+and let's see what's going on and it works.
 
-bigger screen nice . everything works.  
+bigger screen nice . everything works.
 
+## 'React' must be in scope when using JSX react/react-in-jsx-scope?
 
-
+link (https://stackoverflow.com/questions/42640636/react-must-be-in-scope-when-using-jsx-react-react-in-jsx-scope)
